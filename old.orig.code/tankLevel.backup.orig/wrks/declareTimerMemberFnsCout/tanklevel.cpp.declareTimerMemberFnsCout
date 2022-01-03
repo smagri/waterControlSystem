@@ -1,0 +1,60 @@
+// Class definition, or implemntation, is placed in .cpp file.
+
+// C++ system header files
+#include <iostream> // for cout/cin
+//#include <string>
+//#include <stdio.h>
+
+// non-system, local, headers
+#include "tanklevel.hpp"
+#include "ui_tanklevel.h"
+
+
+
+TankLevel::TankLevel(QWidget *parent) :
+  QWidget(parent),
+  ui(new Ui::TankLevel){
+  
+
+  ui->setupUi(this);
+
+  cout<<"dbg: In class DEFAULT constructor in .cpp"<<endl;
+
+  updatePlotLevel();
+  updateAbsoluteLevel();
+  updatePercentageLevel();
+
+}
+
+
+TankLevel::~TankLevel(){
+
+  cout<<"dbg: In class DEFAULT DEstructor in .cpp"<<endl;
+
+  delete ui;
+}
+
+
+void TankLevel::updatePlotLevel(){
+
+  cout<<"dbg: in updatePlotLevel() via C++"<<endl;
+  fprintf(stderr, "dbg: in updatePlotLevel() via C\n");
+
+  return;
+}
+
+void TankLevel::updateAbsoluteLevel(){
+
+  cout<<"dbg: in updateAbsoluteLevel() via C++"<<endl;
+  fprintf(stderr, "dbg: in updateAbsoluteLevel() via C\n");
+
+  return;
+}
+
+void TankLevel::updatePercentageLevel(){
+
+  cout<<"dbg: in updatePercentageLevel() via C++"<<endl;
+  fprintf(stderr, "dbg: in updatePercentageLevel() via C\n");
+
+  return;
+}

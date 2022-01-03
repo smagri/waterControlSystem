@@ -1,0 +1,26 @@
+#ifndef TANKLEVEL_HPP
+#define TANKLEVEL_HPP
+
+// Qwt headers are in ui_tanklevel.h
+
+// Qt headers
+#include <QWidget>
+
+
+namespace Ui {
+class TankLevel;
+}
+
+class TankLevel : public QWidget
+{
+    Q_OBJECT
+    
+public:
+    explicit TankLevel(QWidget *parent = 0);
+    ~TankLevel();
+    
+private:
+    Ui::TankLevel *ui;
+};
+
+#endif // TANKLEVEL_HPP

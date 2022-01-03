@@ -1,0 +1,44 @@
+Thinking on how the plot of data is going to happen:
+
+Plots:
+
+All level  values read from  the serial port  are recored into  a file
+with  a   UTC/'seconds  since  the  epoch'  time   stamp.  Tank  Level
+measurments are taken once every hour.
+
+Resolution of one day(as per maquarie uni app).
+
+User chooses, via calendar widget, the startDay and endDay.
+
+Callback/s  for  calendar  widgets  set  startDay  and  endDay  global
+variables.
+
+updatePlotLevel() uses startDay &  endDay to malloc() an appropriately
+sized  region  for  the  level  data.   Search  the  logfile  for  the
+timestamps required, read in these  level values, and fill this region
+with data, ready for plotting.
+
+When  updatePlotLevel() is  called a  2nd or  more times  you  need to
+free() the  previously malloc()'ed  area and malloc()  a new  area the
+size of all the data for the next plot.
+
+By default  the most  recent full  day of data  is plotted  on program
+startup.
+
+If an invalid  date range is entered...print 'we do  not have data for
+for those dates.'
+
+Currently the plot  displays a Marker, Curve and  Grid.  Note that the
+curve can only have one marker, plotting the next marker overrides the
+previous  marker.  Also  the curve  plot must  have two  or  more data
+points, QwtCurvePlot  does not allow you  to plot only one  value at a
+time, cause it's  a curve plotting thing I  guess.  However, you could
+plot one x,y value by filling the array with two values the same.
+
+
+
+
+
+
+
+

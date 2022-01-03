@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="pms2_ass2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="doc">
+				<Option working_dir="/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 doc"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ranger_lib">
+				<Option output="/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/libranger_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 ranger_lib"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ranger_lib/fast">
+				<Option output="/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/libranger_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 ranger_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ass2">
+				<Option output="/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/ass2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 ass2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ass2/fast">
+				<Option output="/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/ass2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 ass2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/laser.cpp">
+			<Option target="ass2"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/laser.h">
+			<Option target="ass2"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/main.cpp">
+			<Option target="ass2"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/radar.cpp">
+			<Option target="ass2"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/radar.h">
+			<Option target="ass2"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/ranger.cpp">
+			<Option target="ranger_lib"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/ranger.h">
+			<Option target="ranger_lib"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/rangerfusion.cpp">
+			<Option target="ranger_lib"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/rangerfusion.h">
+			<Option target="ranger_lib"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/rangerfusioninterface.cpp">
+			<Option target="ranger_lib"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/rangerfusioninterface.h">
+			<Option target="ranger_lib"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/rangerinterface.cpp">
+			<Option target="ranger_lib"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/rangerinterface.h">
+			<Option target="ranger_lib"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2/Doxyfile.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

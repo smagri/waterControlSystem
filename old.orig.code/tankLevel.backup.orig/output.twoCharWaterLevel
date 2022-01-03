@@ -1,0 +1,30 @@
+Starting /lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/tankLevel...
+dbg: In class DEFAULT CONstructor in .cpp
+dbg: readSP: readChar is initialised to: 0
+dbg: readSP: readInt is initialised to: 0
+14
+dbg: readSP: read() success, readChar=1
+dbg: readSP: write() success, readIntS[0]=1
+dbg: readSP: read() success, readChar=4
+dbg: readSP: write() success, readIntS[1]=4
+dbg: readSP: read() success, readChar=
+dbg: readSP: read() success, readChar=
+
+dbg: readSP: numDigitsRead=2
+dbg: readSP: readInt=14
+dbg: readSP: readStr=14
+dbg: in updatePlotLevel() via C++
+dbg: in updatePlotLevel() via C
+dbg: updatePlotL: sizeof time and height arrays is: 6
+dbg: in updateAbsoluteLevel() via C++
+dbg: in updateAbsoluteLevel() via C
+dbg: updateAbsL: readInt=14
+dbg: updateAbsL: readStr=14
+dbg: in updatePercentageLevel() via C++
+dbg: Exiting class DEFAULT CONstructor in .cpp
+dbg: in updatePercentageLevel() via C
+dbg: updatePercentL: readInt=14
+dbg: updatePercentL: readStr=14
+dbg: In class DEFAULT DEstructor in .cpp
+/lu1/smagri/proj/waterSysCtrl/tankLevel-build-desktop-Qt_4_8_1_in_PATH__System__Release/tankLevel
+exited with code 0

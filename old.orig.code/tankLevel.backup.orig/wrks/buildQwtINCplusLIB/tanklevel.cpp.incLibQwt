@@ -1,0 +1,18 @@
+
+
+// Local class headers
+#include "tanklevel.hpp"
+#include "ui_tanklevel.h"
+
+
+TankLevel::TankLevel(QWidget *parent) :
+    QWidget(parent),
+    ui(new Ui::TankLevel)
+{
+    ui->setupUi(this);
+}
+
+TankLevel::~TankLevel()
+{
+    delete ui;
+}

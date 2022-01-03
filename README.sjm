@@ -1,0 +1,10 @@
+12may2021 ubuntu18.04
+
+smagri@luqa:/home/smagri%find * -name "qwt*6*" -print
+sftw/qwt/qwt-6.1.2.tar.bz2noEdits
+sftw/qwt/qwt-6.1.2.tar.bz2noEdits/qwt-6.1.2.tar.bz2
+sftw/qwt/qwt-6.1.2.tar.bz2noEdits/qwt-6.1.2
+sftw/qwt/qwt-6.1.2.tar.bz2
+sftw/qwt/qwt-6.1.2
+sftw/qwt/qwt-6.1.2.pass1.qmake3.0.qt5.2.1
+smagri@luqa:/home/smagri%

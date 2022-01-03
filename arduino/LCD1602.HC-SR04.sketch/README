@@ -1,0 +1,25 @@
+27nov2018
+
+Ultrasonic.ino needs to be in  directory Ultrasonic in current working
+directory,  so arduino  ide creates  it once  you open  the .ino  file
+within it for the first time.
+
+Lib_IM120628012_HC_SR04.zip - hc-sr04 ultrasonic sensor library .zip
+needs to be loaded via:
+
+Sketch->Add Library->Lib_IM120628012_HC_SR04.zip
+
+This then puts the sensor .cpp .h files into Preferences->Sketchbook
+location, in this case it is:
+/lu1/smagri/Arduino/sketches/libraries/Ultrasonic
+
+Using snap version of arduino ide so libraries are here:
+/home/smagri/snap/arduino/current/Arduino/libraries
+
+
+Lib_IM120628012_HC_SR04.zip    contains    example   HC_SR04    serial
+port(Ultrasonic.ino) and LCD ouput code(UltrasonicDemo1.ino).  Renamed
+UltrasonicDemo.pde.lcdComms  and   Ultrasonic.ino.serialComms  by  me.
+Both       are       combined       by       me       to       produce
+Ultrasonic.distanSensorLCD/Ultrasonic.ino, used  to program  the kicad
+distansensorSensor.

@@ -1,0 +1,9 @@
+21nov2018
+
+These are kicad  based .sch and .pcb files for  arduino pro mini based
+water level sensor, developed for illabunda.
+
+Uses ArduinoProMiniTKB.lib with the  ARDUPROMMINI componenet, this has
+best pinout matching my arduino pro mini board@21nov2018.
+
+

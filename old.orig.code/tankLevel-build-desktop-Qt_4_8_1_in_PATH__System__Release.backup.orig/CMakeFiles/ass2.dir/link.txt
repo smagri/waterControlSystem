@@ -1,0 +1,1 @@
+/usr/bin/g++   -std=c++11  -rdynamic CMakeFiles/ass2.dir/main.cpp.o CMakeFiles/ass2.dir/laser.cpp.o CMakeFiles/ass2.dir/radar.cpp.o  -o ass2 libranger_lib.a 
