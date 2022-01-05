@@ -1,6 +1,8 @@
 #!/usr/bin/env python3.6
 
 import sys
+import serial
+import io
 
 #imports all the modules you need to create a GUI into the current namespace
 #from PyQt5.QtCore import Qt
@@ -11,6 +13,19 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QPalette
 
+
+
+def timerCbk(w textDistance):
+
+    serialPort = serial.Serial('/dev/ttyACM0') # open serial port
+    print(serialPortRead.name) # check which port was really used
+    serialPort.close()
+
+    
+    textDistance.setText("readStr")
+
+    textDistance.exec_()
+    
 
 if __name__ == "__main__":
 
