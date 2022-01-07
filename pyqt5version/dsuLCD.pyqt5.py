@@ -3,33 +3,54 @@
 import sys
 import serial
 import io
+import time
 
 #imports all the modules you need to create a GUI into the current namespace
 #from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QWidget, QTextEdit
 #from PyQt5.QtGui import QPalette
 
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QTimer
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QPalette
-
 
 
 def timerCbk():
 
     
 
-    # serialPort = serial.Serial('/dev/ttyACM0', 9600, timout=0) # open serial port
+    # serialPort = serial.Serial('/dev/ttyACM0', 9600, timout=0)#open serial port
     # print(serialPortRead.name) # check which port was really used
     # serialPort.close()
     # readStr = serialPort.readlin() # read a '\n' terminated line
     # print_exc(readStr)
+    print("dbg:dsuLCD:timerCbk: in timerCbk")
 
-    readStr = "serial output string"
-    textDistance.setText(readStr)
+    lineEditSerialPort.setText(serialPort.name)
 
-    textDistance.exec_()
     
+    #readStr =  ["" for x in  range(15)] # allocate a  string array of
+    # siz 15 chars, but shouldn't really  do this in python, use lists
+    # instead
+
+    # allocate empty array/ie list.  In python list is a wrapper for a
+    # real array  which contains references to  items, not necessarily
+    # of the same type
+    readStr = [] 
+    readStr = str( (serialPort.readline()) )
+    lengthReadStr = len(readStr)
+
+    # Remove \b at  beginning of string and remove \r\nLF  ie CR CR LF
+    # LF at  end of string  end of string. This  is a function  of the
+    # arduino         sketch         output,        see         sketch
+    # distanceSensorUltrasonicLCD.ino.
+    distance = readStr[2:lengthReadStr-5]
+
+    print("dbg:dsuLCD:timerCbk: lengthReadStr is " + str(lengthReadStr))
+    print("dbg:dsuLCD:timerCbk: readStr is " + readStr)
+    print("dbg:dsuLCD:timerCbk: distance is " + distance)
+
+    textDistance.setText(distance)
 
 
     
@@ -67,7 +88,7 @@ if __name__ == "__main__":
     labelGap1 = QLabel("")
     labelGap2 = QLabel("")
 
-    labelSerialPort = QLabel("Enter Serialport name, eg: /dev/ttyACM0")
+    labelSerialPort = QLabel("Enter Serial Port name, eg: /dev/ttyACM0")
     lineEditSerialPort = QLineEdit(w)
     
     labelGap3 = QLabel("")
@@ -122,11 +143,16 @@ if __name__ == "__main__":
 
     # textDistance.signal.connect(slotReadSerialPort)
     # textEditDistance.setPlainText("Hello PyQt5!\nfrom pythonpyqt.com")
-    textDistance.textChanged.connect(timerCbk)
     timer = QTimer() # create a timer object
     timer.timeout.connect(timerCbk)
-    timer.start(100)
-    
+    timer.start(200) # milliseconds
+    #textDistance.textChanged.connect(timerCbk)
+    #textDistance.setText.connect(timerCbk)
+
+    # open serial port
+    serialPort = serial.Serial('/dev/ttyUSB0', 9600, timeout=0)
+    # check which port was really used
+    print("serial port opened is " + serialPort.name)
 
        
     # Display the widget onthe monitor screen.
@@ -138,4 +164,5 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 
 
+    serialPort.close()
     
