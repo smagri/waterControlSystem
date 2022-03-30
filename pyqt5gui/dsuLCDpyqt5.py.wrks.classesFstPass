@@ -92,14 +92,7 @@ class dsuLCDpyqt5():
 
     def debuggingFn(self):
         print("dbg:debuggingFn: calling test fn from dsuLCDpyqt5 class")
-
-
-    # def serialPortStringEntered(self):
-    #     print("inside  serialPortStringEntered()")
-    #     # get text from line
-    #     serialPort = self.lineEditSerialPort.text()
-    #     print("serialPort text entered is: " + serialPort)
-    
+            
             
 
 

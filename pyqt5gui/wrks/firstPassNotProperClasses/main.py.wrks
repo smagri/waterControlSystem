@@ -14,9 +14,8 @@ from dsuLCDpyqt5 import dsuLCDpyqt5
 
 #imports all the modules you need to create a GUI into the current namespace
 #from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QApplication, QWidget, QTextEdit, QLineEdit
+from PyQt5.QtWidgets import QApplication, QWidget, QTextEdit
 #from PyQt5.QtGui import QPalette
-
 
 from PyQt5.QtCore import Qt, QTimer
 from PyQt5.QtWidgets import *
@@ -59,22 +58,18 @@ if __name__ == "__main__":
     labelGap1 = QLabel("")
     labelGap2 = QLabel("")
 
-    labelSerialPort = QLabel("Enter Serial Port name, eg: /dev/ttyACM0:")
-    lineEditSerialPort = QLineEdit("",w)
-    # lineEditSerialPort.move(200,100)
-    # lineEditSerialPort.setGeometry(10,10,50,50)
-    
-
     labelRun = QLabel("TO RUN:  argv[0] \"serial port name, dont forget to quote it\"")
     print("TO RUN:  argv[0] \"serial port name, dont forget to quote it\"")
     # argv[1], eg "/dev/ttyUSB0".  argv[0] is the program name.
 
+    #labelSerialPort = QLabel("Enter Serial Port name, eg: /dev/ttyACMO")
+    #lineEditSerialPort = QLineEdit(w)
+    
     labelGap3 = QLabel("")
     labelDistance = QLabel("Distance (cm)", w)
     #labelDistance.setWordWrap(True)
     labelDistance.move(200,200)
     textDistance = QTextEdit("",w)
-    
     
 
     #enteredSerilaPort = QComboBox(w)
@@ -87,9 +82,9 @@ if __name__ == "__main__":
     vbox.addWidget(labelGap)
     vbox.addWidget(labelGap1)
 
+    #vbox.addWidget(labelSerialPort)
     vbox.addWidget(labelRun)
-    vbox.addWidget(labelSerialPort)
-    vbox.addWidget(lineEditSerialPort)
+    #vbox.addWidget(lineEditSerialPort)
 
     vbox.addWidget(labelGap2)
     vbox.addWidget(labelGap3)
@@ -130,11 +125,7 @@ if __name__ == "__main__":
     timer.timeout.connect(lambda:d.timerCbk(textDistance))
     timer.start(200) # milliseconds
 
-    # Hit ENTER to input your serial port name as a string to the program
-    lineEditSerialPort.returnPressed.connect(lambda:d.debuggingFn())
-    #lineEditSerialPort.returnPressed.connect(lambda:d.serialPortStringEntered())
-
-    
+       
     # Display the widget onthe monitor screen.
     w.show()
 
