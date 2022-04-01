@@ -77,10 +77,12 @@ class dsuLCDpyqt5(QWidget):
         # definition indicates and this is denoted by self
         #
         self.labelPCBdetails = QLabel("(using HCSR04 with 1602LCD)", self)
-        self.labelPCBdetails.move(100,100) #(from_left, from_top)
-        self.labelGap = QLabel("", self)
+#         labelPCBdetails.move(125,10) #(from_left, from_top)
+        #self.labelGap = QLabel(self)
 #         labelGap.move(125,40) #(from_left, from_top)
-                #self.labelGap2 = QLabel(self)
+        #self.labelGap1 = QLabel(self)
+#         labelGap1.move(125,80) #(from_left, from_top)
+        #self.labelGap2 = QLabel(self)
 #         labelGap2.move(125,120)#(from_left, from_top)
 
 
@@ -101,10 +103,6 @@ class dsuLCDpyqt5(QWidget):
         
         self.lineEditSerialPort = QLineEdit("", self)
 #         lineEditSerialPort.move(10, 280)
-        self.labelGap1 = QLabel(self)
-#         labelGap1.move(125,80) #(from_left, from_top)
-
-        self.textDistance = QTextEdit("", self)
 
 
         
@@ -126,19 +124,18 @@ class dsuLCDpyqt5(QWidget):
 
         self.vbox = QVBoxLayout(self)
         self.vbox.addWidget(self.labelPCBdetails)
-        self.vbox.addWidget(self.labelGap)
-                #self.vbox.addWidget(self.labelGap2)
+        #self.vbox.addWidget(self.labelGap)
+        #self.vbox.addWidget(self.labelGap1)
+        #self.vbox.addWidget(self.labelGap2)
         #self.vbox.addWidget(self.labelGap3)
         self.vbox.addWidget(self.labelRun)
         self.vbox.addWidget(self.labelSerialPort)
         self.vbox.addWidget(self.lineEditSerialPort)
-        self.vbox.addWidget(self.labelGap1)
         self.vbox.addWidget(self.labelDistance)
-        self.vbox.addWidget(self.textDistance)
 
 
         timer = QTimer() # create a timer object
-        timer.timeout.connect(lambda:d.timerCbk(textDistance, lineEditSerialPort))
+        timer.timeout.connect(lambda:d.timerCbk(textDistance))
         timer.start(200) # milliseconds
 
         
@@ -152,7 +149,7 @@ class dsuLCDpyqt5(QWidget):
         print(serialPortStr)
 
 
-    def timerCbk(self, textDistance, lineEditSerialPort):
+    def timerCbk(self, textDistance):
 
             global serialPort
             global serialPortOpen
@@ -186,19 +183,7 @@ class dsuLCDpyqt5(QWidget):
             # print("readStr is" + readStr)
             #serialPort = serial.Serial('/dev/ttyUSB0', 9600, timeout=0)
 
-            # TODO: MAYBE IMPLEMENT try: exception: HERE IS BETTER
-            # FIXME: MAYBE IMPLEMENT try: exception: HERE IS BETTER 
-            #
-            if (sys.argv[1] != ""):
-                portNameStr = sys.argv[1] #sys.argv[0] is name of python script
-            elif (lineEditSerialPort != ""):
-                portNameStr = lineEditSerialPort
-            else:
-                print("You need to enter a serial port name on the command line or in editbox")
-        
-
-        
-            
+            portNameStr = sys.argv[1] #sys.argv[0] is name of python script
             if (serialPortOpen == "False"):
                 print("opening serial port")
                 serialPort = serial.Serial(portNameStr, 9600, timeout=0)
@@ -238,7 +223,7 @@ def main():
     sys.exit(app.exec_())
 
     # return from Qt event loop as program dialog/main widget window killed
-    serialPort.close()    
+    #serialPort.close()    
 
 if __name__ == '__main__':
     main()

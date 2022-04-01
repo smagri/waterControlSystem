@@ -138,7 +138,7 @@ class dsuLCDpyqt5(QWidget):
 
 
         timer = QTimer() # create a timer object
-        timer.timeout.connect(lambda:d.timerCbk(textDistance, lineEditSerialPort))
+        timer.timeout.connect(lambda:d.timerCbk(textDistance))
         timer.start(200) # milliseconds
 
         
@@ -152,7 +152,7 @@ class dsuLCDpyqt5(QWidget):
         print(serialPortStr)
 
 
-    def timerCbk(self, textDistance, lineEditSerialPort):
+    def timerCbk(self, textDistance):
 
             global serialPort
             global serialPortOpen
@@ -186,19 +186,7 @@ class dsuLCDpyqt5(QWidget):
             # print("readStr is" + readStr)
             #serialPort = serial.Serial('/dev/ttyUSB0', 9600, timeout=0)
 
-            # TODO: MAYBE IMPLEMENT try: exception: HERE IS BETTER
-            # FIXME: MAYBE IMPLEMENT try: exception: HERE IS BETTER 
-            #
-            if (sys.argv[1] != ""):
-                portNameStr = sys.argv[1] #sys.argv[0] is name of python script
-            elif (lineEditSerialPort != ""):
-                portNameStr = lineEditSerialPort
-            else:
-                print("You need to enter a serial port name on the command line or in editbox")
-        
-
-        
-            
+            portNameStr = sys.argv[1] #sys.argv[0] is name of python script
             if (serialPortOpen == "False"):
                 print("opening serial port")
                 serialPort = serial.Serial(portNameStr, 9600, timeout=0)

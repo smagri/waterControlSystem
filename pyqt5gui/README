@@ -2,7 +2,8 @@
 
 Could not easily  work out howto get  the input from the  Text box for
 the name  of the serial  port, so I implemented  it as a  command line
-argument for now.  Perhaps I need to use TextLineEdit()
+argument for now.   Perhaps I need to use TextLineEdit().   And I need
+to fix the class I think, google around again.
 
 Perhaps need to experiment with combo box, see inline code for a start.
 
