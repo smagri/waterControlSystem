@@ -1,3 +1,20 @@
+5apr2022
+
+I implemented  using QLineEdit()  for getting the  port name  from the
+user from a  text box, can still  use the command like  instead if you
+like.
+
+This was implemented with proper python classes using self. I think it
+is the proper way as thegreatcourses.com uses this method.
+
+However, this version has not been test with the actual hardaware as
+firstPassNotProperClasses/ version, so may still need to be fine
+tuned. Appears to work with a test on the command line though.
+
+Also, this is a good example of a basic pyqt5 GUI.
+
+------------------------------------------------------------------------------------
+
 14mar2022
 
 Could not easily  work out howto get  the input from the  Text box for
