@@ -16,6 +16,7 @@ However, the design  can be used a general ultrasonic  sensor based as
 an approximate distance measure from 2cm  - 400cm. There are new plans
 for a PyDroid3 python based TCP  network RF version to be created now.
 
+#### Code Summary:
 Included in the waterSystemControl repository:
 
 * is the arduino pro  mini sketch code, /arduino/LCD1602.HC-SR04.sketch
