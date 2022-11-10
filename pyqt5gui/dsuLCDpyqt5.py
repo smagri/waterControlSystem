@@ -96,7 +96,7 @@ class dsuLCDpyqt5(QWidget):
 
 
         self.labelSerialPort = QLabel(
-             "OR: Enter Serial Port name, eg: /dev/ttyACM0 <Return>", self)
+             "OR: Enter Serial Port name, eg: /dev/ttyACM0:", self)
 #         labelSerialPort.move(10, 240 )
         
         self.lineEditSerialPort = QLineEdit("", self)
@@ -124,15 +124,6 @@ class dsuLCDpyqt5(QWidget):
         # labelDistance.move(10,340)
 
 
-        #######################################################################
-        #         USE Layoyuts for automatic resizability of widgets.         #
-        #######################################################################
-        
-        # Layout  managers automatically  adapt to  resize events  and
-        # content changes. They  also control the size  of the widgets
-        # within them.  This means  that the widgets  in a  layout are
-        # automatically resized whenever the form is resized.
-        
         self.vbox = QVBoxLayout(self)
         self.vbox.addWidget(self.labelPCBdetails)
         self.vbox.addWidget(self.labelGap)
